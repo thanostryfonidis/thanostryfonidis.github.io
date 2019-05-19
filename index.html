@@ -1,0 +1,90 @@
+<html>
+<title>Thanos Tryfonidis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos&display=swap">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Tinos', serif;}
+body, html {
+  height: 100%;
+  color: #black;  
+  line-height: 1.8;
+  }
+.w3-wide {letter-spacing: 5px;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body bgcolor="fdfffc">
+
+<!-- Navigation -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"> About</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"> Contact</a>
+    </a>
+  </div>
+
+  <!-- Navigation small -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Portofolio</a>
+    <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+</div>
+
+<!-- center -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+  <h1 class="w3-jumbo"><b>Thanos Tryfonidis</b></h1>
+   <p>Photographer Cinematographer and Greaphic Designer.</p>
+  <div class="w3-container">
+  <img src="images/lower.jpg" class="w3-image w3-padding" width="640" height="360" align="center">
+  </div>
+
+<!-- footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-Xlarge" style="margin:-24px">
+    <a href="https://www.facebook.com/thanostrf" target="_blank"> 
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+	<a href="https://www.instagram.com/thanostryfonidis/" target="_blank"> 
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+	</a>
+	<p class="w3-medium">©2019 Thanos Tryfonidis. All rights reserved. </p>
+</footer>
+ 
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
