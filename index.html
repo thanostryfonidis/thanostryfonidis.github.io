@@ -20,36 +20,44 @@ body, html {
     min-height: 400px;
   }
 }
+
+.wrapper
+{
+  min-height: 100%;
+}
 </style>
 <body bgcolor="fdfffc">
 
 <!-- Navigation -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
-	<a href="about.html" class="w3-bar-item w3-button w3-hide-small"> About</a>
-    </a>
+<div class='wrapper'>
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hide-small"> About</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"> Contact</a>
+      </a>
+    </div>
+
+    <!-- Navigation small -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Portofolio</a>
+      <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+    </div>
   </div>
 
-  <!-- Navigation small -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Portofolio</a>
-	<a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-  </div>
+  <!-- center -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Thanos Tryfonidis</b></h1>
+    <p>Photographer Cinematographer and Greaphic Designer.</p>
+    <div class="w3-container">
+    <img src="images/lower.jpg" class="w3-image w3-padding" width="640" height="360" align="center">
+    </div>
 </div>
-
-<!-- center -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-  <h1 class="w3-jumbo"><b>Thanos Tryfonidis</b></h1>
-   <p>Photographer Cinematographer and Greaphic Designer.</p>
-  <div class="w3-container">
-  <img src="images/lower.jpg" class="w3-image w3-padding" width="640" height="360" align="center">
-  </div>
-
 <!-- footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-Xlarge" style="margin:-24px">
     <a href="https://www.facebook.com/thanostrf" target="_blank"> 
