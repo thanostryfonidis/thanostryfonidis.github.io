@@ -2,12 +2,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Tinos', serif;}
 body, html {
   height: 100%;  
   line-height: 1.8;
-  background-image: url("../images/lower2.jpg");
   background-position:center;
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:cover;
   background-color:#080705;
+  }
+  body{  
+    background-image: url("../images/lower2.jpg");
   }
 .w3-wide 
 {
