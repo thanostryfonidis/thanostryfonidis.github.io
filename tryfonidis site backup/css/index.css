@@ -2,12 +2,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Tinos', serif;}
 body, html {
   height: 100%;  
   line-height: 1.8;
+<<<<<<< HEAD
 
   }
 
 body
 {
   background-image: url("../images/lower2.jpg");
+=======
+>>>>>>> c5d59418e4a9566802041b6abbbe028fe0c8d4f5
   background-position:center;
   background-repeat:no-repeat;
   background-attachment:fixed;
@@ -19,8 +22,14 @@ body
   body {
     background-image: url("../images/6.jpg");
   }
+<<<<<<< HEAD
 }
 
+=======
+  body{  
+    background-image: url("../images/lower2.jpg");
+  }
+>>>>>>> c5d59418e4a9566802041b6abbbe028fe0c8d4f5
 .w3-wide 
 {
   letter-spacing: 5px;
